@@ -65,7 +65,7 @@ function atualizaTabela() {
 function atualizaMediaFinal() {
     const mediaFinal = calculaMediaFinal(); // Calcula a média final das notas
     // Atualiza o valor da média final e exibe se o aluno foi aprovado ou reprovado
-    document.querySelector('#media-final-valor').innerHTML = mediaFinal;
+    document.querySelector('#media-final-valor').innerHTML = mediaFinal.toFixed(2);
     document.querySelector('#media-final-resultado').innerHTML = mediaFinal >= NotaMinima ? spanAprovado : spanReprovado;
 }
 
